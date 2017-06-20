@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'dev-build' ]
+2 info using npm@3.10.9
+3 info using node@v6.9.2
+4 verbose run-script [ 'predev-build', 'dev-build', 'postdev-build' ]
+5 info lifecycle fullstack-template@1.0.0~predev-build: fullstack-template@1.0.0
+6 silly lifecycle fullstack-template@1.0.0~predev-build: no script for predev-build, continuing
+7 info lifecycle fullstack-template@1.0.0~dev-build: fullstack-template@1.0.0
+8 verbose lifecycle fullstack-template@1.0.0~dev-build: unsafe-perm in lifecycle true
+9 verbose lifecycle fullstack-template@1.0.0~dev-build: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/angie/Workspace/fullstack-template/fullstack_template/static/node_modules/.bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin
+10 verbose lifecycle fullstack-template@1.0.0~dev-build: CWD: /Users/angie/Workspace/fullstack-template/fullstack_template/static
+11 silly lifecycle fullstack-template@1.0.0~dev-build: Args: [ '-c', 'webpack --progress -d --config ./webpack.config.js' ]
+12 silly lifecycle fullstack-template@1.0.0~dev-build: Returned: code: 2  signal: null
+13 info lifecycle fullstack-template@1.0.0~dev-build: Failed to exec dev-build script
+14 verbose stack Error: fullstack-template@1.0.0 dev-build: `webpack --progress -d --config ./webpack.config.js`
+14 verbose stack Exit status 2
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid fullstack-template@1.0.0
+16 verbose cwd /Users/angie/Workspace/fullstack-template/fullstack_template/static/js
+17 error Darwin 16.6.0
+18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "dev-build"
+19 error node v6.9.2
+20 error npm  v3.10.9
+21 error code ELIFECYCLE
+22 error fullstack-template@1.0.0 dev-build: `webpack --progress -d --config ./webpack.config.js`
+22 error Exit status 2
+23 error Failed at the fullstack-template@1.0.0 dev-build script 'webpack --progress -d --config ./webpack.config.js'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the fullstack-template package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     webpack --progress -d --config ./webpack.config.js
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs fullstack-template
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls fullstack-template
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
