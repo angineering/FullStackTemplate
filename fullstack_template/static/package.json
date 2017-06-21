@@ -17,8 +17,12 @@
     "npm",
     "webpack"
   ],
+  "repository": {
+    "type": "git",
+	"url": "https://github.com/angineering/FullStackTemplate.git"
+  },
   "author": "Angela Branaes",
-  "license": "ISC",
+  "license": "MIT",
   "babel": {
     "presets": [
       "es2015",
