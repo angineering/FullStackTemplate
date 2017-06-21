@@ -4,10 +4,10 @@
   "description": "Fullstack Template",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules/.bin/webpack -p --progress --config ./webpack.config.js",
-    "dev-build": "node_modules/.bin/webpack --progress -d --config ./webpack.config.js",
+    "build": "webpack -p --progress --config webpack.config.js",
+    "dev-build": "webpack --progress -d --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "node_modules/.bin/webpack --progress -d --config ./webpack.config.js --watch"
+    "watch": "webpack --progress -d --config webpack.config.js --watch"
   },
   "keywords": [
     "fullstack",
@@ -32,6 +32,6 @@
     "babel-preset-react": "^6.24.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "webpack": "^2.6.1"
+    "webpack": "^3.0.0"
   }
 }
