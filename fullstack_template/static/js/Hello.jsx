@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 
 var $ = require('jquery');
 
@@ -6,10 +7,9 @@ export default class Hello extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {greeting: "Hello " + this.props.name};
-	}
 
-	componentDidMount() {
-		this.getPythonHello();
+		// This binding is necessary to make `this` work in the callback
+		this.getPythonHello = this.getPythonHello.bind(this);
 	}
 
 	getPythonHello() {
@@ -20,6 +20,13 @@ export default class Hello extends React.Component {
 	}
 	
 	render () {
-        return <h1> {this.state.greeting} </h1>;
+        return (
+			<div>
+			<h1>{this.state.greeting}</h1>
+			<Button bsSize="large" bsStyle="primary" onClick={this.getPythonHello}>
+			Click for a new Greeting!
+			</Button>
+			</div>
+		);
     }
 }
