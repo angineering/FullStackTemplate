@@ -1,5 +1,8 @@
 import React from "react";
-import Hello from "./Hello"
+import Hello from "./Hello";
+import { PageHeader, Grid, Row, Col } from "react-bootstrap";
+
+require('../css/fullstack.css');
 
 var $ = require('jquery');
 
@@ -9,6 +12,10 @@ export default class App extends React.Component {
 	}
 
 	render () {
-        return <Hello name='Rimini' />;
+        return (
+			<PageHeader>
+				<Hello name='Rimini' />
+			</PageHeader>
+		);
     }
 }
