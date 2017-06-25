@@ -2,3 +2,8 @@
 	min-height: 100%;
 	text-align: center;
 }
+.header-contents {
+	top: 50%;
+	left: 40%;
+	position:absolute;
+}
