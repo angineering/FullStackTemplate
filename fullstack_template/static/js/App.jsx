@@ -1,7 +1,14 @@
 import React from "react";
+import Hello from "./Hello"
+
+var $ = require('jquery');
 
 export default class App extends React.Component {
-    render () {
-        return <p> Hello React!</p>;
+	constructor(props) {
+		super(props);
+	}
+
+	render () {
+        return <Hello name='Rimini' />;
     }
 }
