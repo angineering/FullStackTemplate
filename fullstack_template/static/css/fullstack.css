@@ -5,11 +5,10 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	margin-top: -20px;
+	margin-top: 0px;
 }
 .header-contents {
 	top: 50%;
-	left: 40%;
 	position:absolute;
 }
 .header-contents h1 {

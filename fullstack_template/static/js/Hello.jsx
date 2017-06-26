@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button, Grid, Row, Col } from "react-bootstrap";
 
 var $ = require('jquery');
 
@@ -25,13 +25,21 @@ export default class Hello extends React.Component {
 
 	render () {
         return (
-			<div>
+			<Grid>
+			<Row>
+			<Col md={8} mdOffset={4}>
 			<h1>{this.state.greeting}</h1>
 			<hr/>
+			</Col>
+			</Row>
+			<Row>
+			<Col md={8} mdOffset={4}>
 			<Button bsSize="large" bsStyle="danger" onClick={this.getPythonHello}>
 			Say Hello!
 			</Button>
-			</div>
+			</Col>
+			</Row>
+			</Grid>
 		);
     }
 }
