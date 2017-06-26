@@ -17,7 +17,7 @@ def hello():
 
 
 def get_hello():
-    greeting_list = ['Bonjour', 'Ciao', 'Hei', 'Salut', 'Hola', 'Buongiorno']
+    greeting_list = ['Ciao', 'Hei', 'Salut', 'Hola', 'Hallo', 'Hej']
     return random.choice(greeting_list)
 
 
