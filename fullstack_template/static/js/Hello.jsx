@@ -27,13 +27,13 @@ export default class Hello extends React.Component {
         return (
 			<Grid>
 			<Row>
-			<Col md={8} mdOffset={4}>
+			<Col md={7} mdOffset={5}>
 			<h1>{this.state.greeting}</h1>
 			<hr/>
 			</Col>
 			</Row>
 			<Row>
-			<Col md={8} mdOffset={4}>
+			<Col md={7} mdOffset={5}>
 			<Button bsSize="large" bsStyle="danger" onClick={this.getPythonHello}>
 			Say Hello!
 			</Button>
