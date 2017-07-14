@@ -15,4 +15,5 @@ setup(
     'Topic :: Software Development',
     'Natural Language :: English'
     ],
+    requires=['flask']
 )
