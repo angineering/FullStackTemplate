@@ -13,26 +13,26 @@ const config = {
     module: {
         rules: [
             {
-				test: /\.jsx?/, 
-				exclude: /node_modules/,
-				use: 'babel-loader'
-			},
-			{
-				test: /\.css$/,
-				use: ExtractTextPlugin.extract({
-					fallback: 'style-loader',
-					use: 'css-loader',
-				})
-			},
-			{
-				test: /\.(png|svg|jpg|gif)$/,
-				use: 'file-loader'
-			}
+                test: /\.jsx?/,
+                exclude: /node_modules/,
+                use: 'babel-loader'
+            },
+            {
+                test: /\.css$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: 'css-loader',
+                })
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: 'file-loader'
+            }
         ]
     },
-	plugins: [
-		new ExtractTextPlugin('styles.css'),
-	]
+    plugins: [
+        new ExtractTextPlugin('styles.css'),
+    ]
 };
 
 module.exports = config;
